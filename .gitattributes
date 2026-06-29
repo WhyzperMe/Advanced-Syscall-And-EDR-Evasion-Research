@@ -1,0 +1,30 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# C++ source files
+*.cpp text diff=cpp
+*.h text diff=cpp
+*.hpp text diff=cpp
+*.c text diff=cpp
+
+# Assembly files
+*.asm text
+*.inc text
+
+# PowerShell scripts
+*.ps1 text eol=crlf
+
+# Markdown
+*.md text
+
+# Visual Studio project files
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+
+# Binary files
+*.exe binary
+*.dll binary
+*.obj binary
+*.lib binary
+*.pdb binary
