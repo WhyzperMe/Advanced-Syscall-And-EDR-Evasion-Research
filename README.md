@@ -21,9 +21,7 @@ This comprehensive proof-of-concept combines multiple advanced techniques includ
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technical Deep Dive](#technical-deep-dive)
-- [EDR Evasion Analysis](#edr-evasion-analysis)
 - [Helper Tools](#helper-tools)
-- [References](#references)
 - [License](#license)
 - [Disclaimer](#disclaimer)
 
@@ -239,60 +237,6 @@ cmake --build . --config Release
 ```bash
 # Run the executable
 Advanced-Syscall-And-EDR-Evasion-Research.exe
-```
-
-### Expected Output
-
-```
-============================================================
-  DEF CON ULTIMATE: All Features Combined
-  - HW Breakpoint Detection & Clearing
-  - ntdll Unhooking
-  - ETW Patching
-  - AMSI Bypass
-  - SSN Obfuscation
-  - Module Stomping
-  - Indirect Syscalls
-  - Halo/Tartarus Gate
-  - String/Shellcode Encryption
-  - APC Injection + Sleep Obfuscation
-============================================================
-
-[0] Checking for Hardware Breakpoints...
-    [+] No Hardware Breakpoints detected.
-
-[1] Loading ntdll.dll...
-
-[2] Unhooking ntdll.dll (removing EDR hooks)...
-    [+] ntdll.dll unhooked! (1479578 bytes restored)
-
-[3] Parsing export table (clean ntdll)...
-    Found 2516 exports
-
-[4] Patching ETW (EtwEventWrite)...
-    [+] ETW patched! EtwEventWrite now returns immediately.
-
-[5] Patching AMSI (AmsiScanBuffer)...
-    [+] AMSI patched!
-
-[6] Finding syscall gadget in ntdll.dll...
-    Syscall gadget at: 0x00007FFDE85DFBF2
-
-[7] Resolving Syscall Numbers...
-    SSNs decrypted at runtime
-
-[8] Decrypting shellcode...
-
-[9] Module Stomping (injecting into version.dll)...
-    [+] Module stomped! Shellcode at: 0x00007FFDDEAA1000
-
-[10] Sleep Obfuscation (BEFORE APC queue)...
-    [+] Sleep obfuscation complete!
-
-[11] Queueing APC to current thread...
-    [+] APC queued successfully!
-
-[12] Triggering alertable sleep to execute APC...
 ```
 
 ---
