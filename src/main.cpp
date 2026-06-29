@@ -570,19 +570,7 @@ extern "C" {
 }
 
 int main() {
-    std::cout << "============================================================" << std::endl;
-    std::cout << "  DEF CON ULTIMATE: All Features Combined" << std::endl;
-    std::cout << "  - HW Breakpoint Detection & Clearing" << std::endl;
-    std::cout << "  - ntdll Unhooking" << std::endl;
-    std::cout << "  - ETW Patching" << std::endl;
-    std::cout << "  - AMSI Bypass" << std::endl;
-    std::cout << "  - SSN Obfuscation" << std::endl;
-    std::cout << "  - Module Stomping" << std::endl;
-    std::cout << "  - Indirect Syscalls" << std::endl;
-    std::cout << "  - Halo/Tartarus Gate" << std::endl;
-    std::cout << "  - String/Shellcode Encryption" << std::endl;
-    std::cout << "  - APC Injection + Sleep Obfuscation" << std::endl;
-    std::cout << "============================================================" << std::endl;
+    std::cout << "Attention this code and be used to delopy and create malware\nUse for educational purposes only" << std::endl;
 
     // Step 0: HW BREAKPOINT DETECTION (First thing!)
     std::cout << "\n[0] Checking for Hardware Breakpoints..." << std::endl;
@@ -724,8 +712,7 @@ int main() {
     std::cout << "\n[12] Triggering alertable sleep to execute APC..." << std::endl;
 
     std::cout << "\n============================================================" << std::endl;
-    std::cout << "  SUCCESS - All DEF CON features active!" << std::endl;
-    std::cout << "  EDR Detection: NEAR ZERO" << std::endl;
+    std::cout << "                          SUCCESS" << std::endl;
     std::cout << "============================================================" << std::endl;
     SleepEx(1000, TRUE);
 
